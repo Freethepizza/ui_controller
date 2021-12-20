@@ -49,10 +49,10 @@ export class UIElement{
         switch(this.element.nodeName){
             case "BUTTON":
                 //console.log("its a button");
-                /*this.element.style = `
+                this.element.style = `
                 max-width:128px;
                 min-width:64px;
-                padding:4px 8px 4px 8px`;*/
+                padding:4px 8px 4px 8px`;
                 break;
             case "DIV":
                 //console.log('its a div')
