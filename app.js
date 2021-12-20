@@ -28,8 +28,7 @@ mainScreen.addStyle(`
     align-items:center;
     justify-content:space-between;
     width:100%;
-    height: 100vh;
-    min-height:-webkit-fill-available;
+    height:-webkit-fill-available;
     background-image:url('./img/pattern.png');
     z-index:3;
     `
