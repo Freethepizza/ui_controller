@@ -24,6 +24,8 @@ const button = new UIElement("button", "Toggle");
 mainScreen.addStyle(`
     position:absolute;
     display:flex;
+    box-sizing:border-box;
+    padding:5%;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
