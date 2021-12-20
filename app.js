@@ -40,8 +40,7 @@ secondaryScreen.addStyle(
     flex-direction:column;
     align-items:center;
     width:100%;
-    height: 100vh;
-    min-height:-webkit-fill-available;
+    height:-webkit-fill-available;
     background-color:green;
     z-index:2;
     `
@@ -53,8 +52,7 @@ thirdScreen.addStyle(`
     flex-direction:column;
     align-items:center;
     width:100%;
-    height: 100vh;
-    min-height:-webkit-fill-available;
+    height:-webkit-fill-available;
     background-color:yellow; 
     z-index:1;
     `
