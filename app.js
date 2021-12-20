@@ -25,7 +25,7 @@ mainScreen.addStyle(`
     position:absolute;
     display:flex;
     box-sizing:border-box;
-    padding:5%;
+    padding:8%;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
@@ -81,8 +81,38 @@ buttonGroup.addStyle(
     flex-direction:row;
     justify-content:space-between
     `
-)
+);
 
+howToPlay.addStyle(
+    `
+    border:1px solid #ccc;
+    border-radius: 5px;
+    outline:none;
+    width:180px;
+    color: #333;
+    background-color:#FFB600;
+    `
+);
+
+prizesButton.addStyle(
+    `
+    width:180px;
+    background-color: #6C6C6C;
+    color: #fff;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    `
+);
+
+top100Button.addStyle(
+    `
+    width:180px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: #7B61FF;
+    color: #fff;
+    `
+)
 
 buttonGroup.addElement(basesButton,privacyButton);
 mainScreen.addElement(logo,renderCocinero,howToPlay,startButton,prizesButton,top100Button,buttonGroup)

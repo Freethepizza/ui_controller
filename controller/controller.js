@@ -52,7 +52,7 @@ export class UIElement{
                 this.element.style = `
                 max-width:128px;
                 min-width:64px;
-                padding:4px 8px 4px 8px`;
+                padding:8px 8px 8px 8px`;
                 break;
             case "DIV":
                 //console.log('its a div')
