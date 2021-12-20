@@ -1,12 +1,15 @@
 var css = `
-*{margin: 0;padding: 0;font-family: sans-serif;}
+@font-face {
+    font-family: 'knockout';
+    src:  url('shared/knockout.otf') format('opentype')
+}
+*{margin: 0;padding: 0;}
 .hidden{
     display: none!important;
 }
 `,
 head = document.head || document.getElementsByTagName('head')[0],
 style = document.createElement('style');
-
 head.appendChild(style);
 style.appendChild(document.createTextNode(css));
 
@@ -15,7 +18,7 @@ export class UIController{
     constructor(body){
         this.body = body;
         this.mainElement = document.createElement("div");
-        this.onCreate()
+        this.onCreate();
     }
     onCreate(){
         this.body.appendChild(this.mainElement);
@@ -29,6 +32,7 @@ export class UIController{
     child(){
         console.log(this.mainElement.childNodes)
     }
+
 
 }
 
@@ -50,9 +54,8 @@ export class UIElement{
             case "BUTTON":
                 //console.log("its a button");
                 this.element.style = `
-                max-width:128px;
-                min-width:64px;
-                padding:8px 8px 8px 8px`;
+                padding:8px 8px 8px 8px;
+                `;
                 break;
             case "DIV":
                 //console.log('its a div')

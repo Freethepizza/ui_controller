@@ -8,7 +8,7 @@ const mainScreen = new UIElement("div");
 const logo = new UIElement("img","./img/logo.png");
 const renderCocinero = new UIElement("img","./img/renderCocinero.png");
 const howToPlay = new UIElement("button","How to play");
-const startButton = new UIElement("button","Start");
+const startButton = new UIElement("button","START");
 const prizesButton = new UIElement("button","Premios y bases");
 const top100Button = new UIElement("button","Top 100 ranking");
 const buttonGroup = new UIElement("div");
@@ -20,6 +20,9 @@ const secondaryScreen = new UIElement("div");
 const thirdButton = new UIElement("button","Toggle_Third")
 const thirdScreen = new UIElement("div");
 const button = new UIElement("button", "Toggle");
+
+
+
 
 mainScreen.addStyle(`
     position:absolute;
@@ -83,8 +86,11 @@ buttonGroup.addStyle(
     `
 );
 
+
+
 howToPlay.addStyle(
     `
+    font-family:'knockout';
     border:1px solid #ccc;
     border-radius: 5px;
     outline:none;
@@ -96,6 +102,7 @@ howToPlay.addStyle(
 
 prizesButton.addStyle(
     `
+    font-family:'knockout';
     width:180px;
     background-color: #6C6C6C;
     color: #fff;
@@ -106,13 +113,51 @@ prizesButton.addStyle(
 
 top100Button.addStyle(
     `
+    font-family:'knockout';
     width:180px;
     border:1px solid #ccc;
     border-radius: 5px;
     background-color: #7B61FF;
     color: #fff;
     `
+);
+
+startButton.addStyle(
+    `
+    font-family:'knockout';
+    width:180px;
+    height:72px;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    background-image:url('./img/base-bt.svg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    `
 )
+
+basesButton.addStyle(
+`
+    font-family:'Knockout';
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: #E5E5E5;
+    width:45%;
+`
+);
+
+privacyButton.addStyle(
+    `
+    font-family:'Knockout';
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: #E5E5E5;
+    width:50%;
+    `
+);
+
+
 
 buttonGroup.addElement(basesButton,privacyButton);
 mainScreen.addElement(logo,renderCocinero,howToPlay,startButton,prizesButton,top100Button,buttonGroup)
