@@ -47,7 +47,7 @@ secondaryScreen.addStyle(
     width:100%;
     height:-webkit-fill-available;
     background-color:green;
-    z-index:2;
+    z-index:4;
     `
 );
 
@@ -171,3 +171,7 @@ secondaryScreen.addElement(secondaryButton);
 thirdScreen.addElement(thirdButton);
 ui_controller.add(mainScreen);
 
+startButton.trigger(()=>{
+ui_controller.add(secondaryScreen);
+startButton.toggleElement(secondaryScreen);
+})
