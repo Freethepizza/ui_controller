@@ -3,6 +3,10 @@ var css = `
     font-family: 'knockout';
     src:  url('shared/knockout.otf') format('opentype')
 }
+@font-face {
+    font-family: 'nunito';
+    src:  url('shared/nunito.ttf') format('truetype')
+}
 *{margin: 0;padding: 0;}
 .hidden{
     display: none!important;

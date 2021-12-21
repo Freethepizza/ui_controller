@@ -90,7 +90,7 @@ buttonGroup.addStyle(
 
 howToPlay.addStyle(
     `
-    font-family:'knockout';
+    font-family:'nunito';
     border:1px solid #ccc;
     border-radius: 5px;
     outline:none;
@@ -102,7 +102,7 @@ howToPlay.addStyle(
 
 prizesButton.addStyle(
     `
-    font-family:'knockout';
+    font-family:'nunito';
     width:180px;
     background-color: #6C6C6C;
     color: #fff;
@@ -113,7 +113,7 @@ prizesButton.addStyle(
 
 top100Button.addStyle(
     `
-    font-family:'knockout';
+    font-family:'nunito';
     width:180px;
     border:1px solid #ccc;
     border-radius: 5px;
@@ -139,7 +139,7 @@ startButton.addStyle(
 
 basesButton.addStyle(
 `
-    font-family:'Knockout';
+    font-family:'nunito';
     border:1px solid #ccc;
     border-radius: 5px;
     background-color: #E5E5E5;
@@ -149,7 +149,7 @@ basesButton.addStyle(
 
 privacyButton.addStyle(
     `
-    font-family:'Knockout';
+    font-family:'nunito';
     border:1px solid #ccc;
     border-radius: 5px;
     background-color: #E5E5E5;
