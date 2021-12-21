@@ -159,9 +159,9 @@ privacyButton.addStyle(
 
 
 
-buttonGroup.addElement(basesButton,privacyButton);
-mainScreen.addElement(logo,renderCocinero,howToPlay,startButton,prizesButton,top100Button,buttonGroup)
 
+mainScreen.addElement(logo,renderCocinero,howToPlay,startButton,prizesButton,top100Button,buttonGroup)
+buttonGroup.addElement(basesButton,privacyButton);
 
 button.toggleElement(secondaryScreen);
 secondaryButton.toggleElement(secondaryScreen);
@@ -170,4 +170,4 @@ thirdButton.toggleElement(thirdScreen);
 secondaryScreen.addElement(secondaryButton);
 thirdScreen.addElement(thirdButton);
 ui_controller.add(mainScreen);
-ui_controller.add(secondaryScreen,thirdScreen);
+

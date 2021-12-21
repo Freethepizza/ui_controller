@@ -36,6 +36,9 @@ export class UIController{
     child(){
         console.log(this.mainElement.childNodes)
     }
+    addStyle(s){
+        this.mainElement.style.cssText += s;
+    }
 
 
 }
